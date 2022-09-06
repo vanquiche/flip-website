@@ -1,0 +1,31 @@
+
+.container {
+  width: clamp(13rem, 100%, 18rem);
+  aspect-ratio: 1;
+  min-height: 6rem;
+  border-radius: 5%;
+  outline: .45rem solid white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.content {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.image {
+  width: 85px;
+  height: 85px;
+  position: relative;
+  align-self: center;
+}
