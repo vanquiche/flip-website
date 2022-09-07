@@ -1,26 +1,33 @@
 
 .container {
-  width: clamp(13rem, 100%, 18rem);
+  width: 100%;
+  max-width: 285px;
+  min-width: 175px;
+  min-height: 175px;
   aspect-ratio: 1;
-  min-height: 6rem;
+  // min-height: 10rem;
+  // min-height: 250px;
   border-radius: 5%;
   outline: .45rem solid white;
-  padding: 2rem;
+  padding: 0.85rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 100%, 1.5rem);
   text-align: center;
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .content {
-  font-size: 1.1rem;
+  // margin: 1rem 0;
+  font-size: clamp(1rem, 90%, 1.2rem);
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 135%;
 }
 
 .image {
@@ -28,4 +35,5 @@
   height: 85px;
   position: relative;
   align-self: center;
+  margin-bottom: 10px;
 }

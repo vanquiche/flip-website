@@ -1,8 +1,17 @@
 .container {
-  // outline: 1px solid black ;
-  margin: 2rem 0;
+  // outline: 1px solid black;
+  // margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    // outline: 1px solid white;
+    width: 50%;
+    align-self: center;
+
+  }
 }

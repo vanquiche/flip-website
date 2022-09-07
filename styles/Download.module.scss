@@ -1,0 +1,36 @@
+.container {
+  height: clamp(200px, 80vh, 450px);
+  justify-content: space-evenly;
+  align-items: center;
+  // outline: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.appleLogoContainer {
+  position: relative;
+  width: 25%;
+  min-width: 125px;
+  // outline: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+.appStoreLogoContainer {
+  position: relative;
+  // outline: 1px solid white;
+  width: 50%;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.appStoreLogo {
+  // filter: invert(100%)
+}
+
+.text {
+  // margin-top: 32px;
+  font-size: clamp(1.3rem, 100%, 1.6rem);
+  font-weight: 700;
+  text-align: center;
+}
+

@@ -1,0 +1,17 @@
+.container {
+  height: 5rem;
+  background-color: #499feb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgWrapper {
+  width: 30px;
+}
+
+.footerText {
+  font-size: 1rem;
+  font-weight: 700;
+}
