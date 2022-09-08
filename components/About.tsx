@@ -18,6 +18,7 @@ const About = () => {
               <Image
                 src={require('../public/images/laptop.png')}
                 alt='laptop icon'
+                loading='lazy'
               />
             </span>
             <InfoCard
@@ -28,7 +29,11 @@ const About = () => {
           {/* item 2 */}
           <div className={style.item}>
             <span className={style.imgWrapper}>
-              <Image src={require('../public/images/cat.png')} alt='cat icon' />
+              <Image
+                src={require('../public/images/cat.png')}
+                alt='cat icon'
+                loading='lazy'
+              />
             </span>
             <InfoCard
               title={`designer | michelle`}

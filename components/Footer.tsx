@@ -3,13 +3,19 @@ import React from 'react';
 import style from '../styles/Footer.module.scss';
 
 const Footer = () => {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
   return (
     <footer className={style.container}>
       <span className={style.imgWrapper}>
-        <Image src={require('../public/images/clover.png')} alt='clover logo' />
+        <Image
+          src={require('../public/images/clover.png')}
+          alt='clover logo'
+          loading='lazy'
+        />
       </span>
-      <small className={style.footerText}>&#169; HAPPY CLOVER STUDIO {year}</small>
+      <small className={style.footerText}>
+        &#169; HAPPY CLOVER STUDIO {year}
+      </small>
     </footer>
   );
 };
