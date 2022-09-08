@@ -20,7 +20,7 @@ const Layout = ({ children, color, title }: Props) => {
         role='contentinfo'
         aria-label={title}
       >
-        {title && (
+        {title && title !== '/' && (
           <span className={style.titleWrapper}>
             <h4 className={style.title}>{title.toUpperCase()}</h4>
           </span>

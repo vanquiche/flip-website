@@ -17,9 +17,8 @@
 .image {
   width: 100%;
   min-width: 225px;
-  max-width: 300px;
-  aspect-ratio: 9 / 16;
-  border-radius: 20px;
+  max-width: 375px;
+  height: 100%;
 }
 @media screen and (min-width: 800px) {
   .container {

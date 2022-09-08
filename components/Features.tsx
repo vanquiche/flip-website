@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: 'customize cards',
-    content: 'lots of colors & designs to choose from!',
+    content: 'choose from a large selection of colors and patterns!',
     img: require('../public/images/squares.png'),
     alt: 'cards icon'
   },
@@ -25,7 +25,7 @@ const features = [
   {
     title: 'shop',
     content:
-      'purchase new customizables with in-game currency. no microtransactions!',
+      'purchase new customizables with the coins you earn!',
     img: require('../public/images/shopping.png'),
     alt: 'shopping bag icon'
   },
@@ -39,7 +39,7 @@ const features = [
 
 const Features = () => {
   return (
-    <Layout title='Features' color='#f27059'>
+    <Layout title='Features' color='#4a4e69'>
       <div className={style.container}>
         {features.map((f, i) => (
           <InfoCard

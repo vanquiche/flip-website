@@ -22,7 +22,7 @@ const About = () => {
             </span>
             <InfoCard
               title={'programmer | steve'}
-              content="WHEN HE'S NOT PROGRAMMING, STEVE ENJOYS ART, MOVIES, AND HANGING OUT WITH KITTIES."
+              content="WHEN HE'S NOT PROGRAMMING, STEVE ENJOYS CREATING ART, MOVIES, AND HANGING OUT WITH KITTIES."
             />
           </div>
           {/* item 2 */}

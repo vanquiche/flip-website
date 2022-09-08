@@ -2,11 +2,10 @@
 .container {
   width: 100%;
   max-width: 285px;
+  max-width: 285px;
   min-width: 175px;
   min-height: 175px;
   aspect-ratio: 1;
-  // min-height: 10rem;
-  // min-height: 250px;
   border-radius: 5%;
   outline: .45rem solid white;
   padding: 0.85rem;
@@ -26,7 +25,7 @@
   // margin: 1rem 0;
   font-size: clamp(1rem, 90%, 1.2rem);
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 135%;
 }
 

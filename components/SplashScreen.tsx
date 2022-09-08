@@ -4,7 +4,7 @@ import Layout from './Layout';
 
 const SplashScreen = () => {
   return (
-    <Layout color='#499feb'>
+    <Layout color='#499feb' title='/'>
       <div className={style.textWrapper}>
         <h1 className={style.title}>FLIP</h1>
         {/* <h2 className={style.subTitle}>FLASHCARD APP</h2> */}
