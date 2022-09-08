@@ -10,25 +10,25 @@ const features: { title: string; content: string; img?: any; alt?: string }[] =
   [
     {
       title: 'cards',
-      content: 'filp between the q&a, and dive into the quiz',
+      content: 'flip, edit, and quiz your cards with one touch',
       img: require('../public/images/IMG_0560.jpg'),
       alt: 'cards screenshot',
     },
     {
       title: 'level & xp',
-      content: 'to keep you motivated to get better!',
+      content: 'stay motivated as you improve & level up',
       img: require('../public/images/IMG_0543.jpg'),
       alt: 'levels screenshot',
     },
     {
       title: 'shop',
-      content: 'features new card colors, themes, & more',
+      content: 'new colors & themes to keep things fresh',
       img: require('../public/images/IMG_0576.jpg'),
       alt: 'shop screenshot',
     },
     {
       title: 'stats',
-      content: 'track your progress over time',
+      content: 'track average score and completed sets',
       img: require('../public/images/IMG_0540.jpg'),
       alt: 'stats screenshot',
     },

@@ -8,7 +8,7 @@ const Download = () => {
     <Layout title='download' color='#4a5759'>
       <div className={style.container}>
         <p className={style.text}>
-          AVAILABLE FOR IOS,{' '}
+          AVAILABLE FOR iOS,{' '}
           <a
             href='https://apps.apple.com/us/app/flip-flashcard/id1637560175?l=en'
             target='_blank'

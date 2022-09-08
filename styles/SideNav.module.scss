@@ -1,0 +1,34 @@
+.container {
+  position: fixed;
+  right: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 200px;
+  // outline: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  height: 15px;
+  width: 15px;
+  // background-color: black;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+.linkName {
+  position: absolute;
+  right: 30px;
+  transform: translateY(-15px);
+  transition: opacity 350ms linear;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: black;
+  z-index: 1000;
+  padding: .5rem;
+  border-radius: 10px;
+}

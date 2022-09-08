@@ -6,13 +6,13 @@ import style from '../styles/Features.module.scss';
 const features = [
   {
     title: 'leveling system',
-    content: 'track your status with xp in all your categories!',
+    content: 'track and measure the progress of all your subjects!',
     img: require('../public/images/chart.png'),
     alt: 'chart icon'
   },
   {
-    title: 'customize cards',
-    content: 'choose from a large selection of colors and patterns!',
+    title: 'customize',
+    content: 'personalize your cards with different colors and patterns!',
     img: require('../public/images/squares.png'),
     alt: 'cards icon'
   },
@@ -25,13 +25,13 @@ const features = [
   {
     title: 'shop',
     content:
-      'purchase new customizables with the coins you earn!',
+      'purchase colors, patterns, and themes with coins you earn!',
     img: require('../public/images/shopping.png'),
     alt: 'shopping bag icon'
   },
   {
     title: 'free updates',
-    content: 'all updates and new content will be free forever!',
+    content: 'enjoy more in the future with free content updates!',
     img: require('../public/images/diamond.png'),
     alt: 'diamond icon'
   },

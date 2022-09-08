@@ -19,3 +19,9 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media screen and (max-width: 450px) {
+  .container {
+    display: none;
+  }
+}

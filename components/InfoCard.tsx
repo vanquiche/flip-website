@@ -19,6 +19,7 @@ const InfoCard = ({ title, content, img, alt, color }: Props) => {
         </div>
       )}
       <h6 className={style.title}>{title?.toUpperCase()}</h6>
+
       <p className={style.content}>{content?.toUpperCase()}</p>
     </div>
   );

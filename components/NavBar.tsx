@@ -14,6 +14,7 @@ const NavBar = ({ links }: Props) => {
     <header>
       <nav className={style.container} aria-label='Main'>
         {links.map((link, i) => (
+          i === 0 ? null :
           <div className={style.linkItem} key={i}>
             {link.icon && (
               <span style={{ alignSelf: 'center' }}>
