@@ -10,7 +10,6 @@ const Footer = () => {
         <Image
           src={require('../public/images/clover.png')}
           alt='clover logo'
-          loading='lazy'
         />
       </span>
       <small className={style.footerText}>

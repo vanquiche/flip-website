@@ -25,7 +25,6 @@ const Download = () => {
             src={require('../public/images/DownloadAppStore.png')}
             className={style.appStoreLogo}
             alt='app store logo'
-            loading='lazy'
           />
         </div>
       </div>
