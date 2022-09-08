@@ -24,6 +24,7 @@ const NavBar = ({ links }: Props) => {
                   src={link.icon}
                   alt={link.alt}
                   className={style.linkImage}
+                  loading='eager'
                 />
               </span>
             )}
