@@ -15,18 +15,19 @@
 }
 
 .title {
-  font-size: clamp(1.2rem, 100%, 1.5rem);
+  font-size: clamp(1.5rem, 100%, 1.8rem);
   text-align: center;
   font-weight: 800;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 
 .content {
   // margin: 1rem 0;
-  font-size: clamp(1rem, 90%, 1.2rem);
+  font-size: clamp(1rem, 80%, 1.2rem);
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 135%;
+  word-spacing: 2px;
 }
 
 .image {

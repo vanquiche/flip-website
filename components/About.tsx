@@ -23,7 +23,7 @@ const About = () => {
             </span>
             <InfoCard
               title={'programmer | steve'}
-              content="WHEN HE'S NOT PROGRAMMING, STEVE ENJOYS CREATING ART, MOVIES, AND HANGING OUT WITH KITTIES."
+              content="WHEN HE'S NOT PROGRAMMING, STEVE ENJOYS CREATING ART, MOVIES, AND HANGING OUT WITH KITTIES"
             />
           </div>
           {/* item 2 */}
@@ -43,7 +43,14 @@ const About = () => {
         </div>
         <p className={style.subtitle}>IN COLLABORATION WITH</p>
         <span className={style.heartcoinLogo}>
-          <p className={style.heartcoinText}>HEART COIN</p>
+          <a
+            className={style.heartcoinText}
+            href='https://etsy.com/shop/heartcoinshop'
+            target='_blank'
+            rel='noreferrer'
+          >
+            HEART COIN
+          </a>
         </span>
       </div>
     </Layout>
