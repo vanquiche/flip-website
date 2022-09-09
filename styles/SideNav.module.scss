@@ -1,9 +1,9 @@
 .container {
   position: fixed;
-  right: .85vw;
+  right: 1vw;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
+  // width: 30px;
   height: 200px;
   // outline: 1px solid white;
   display: flex;
@@ -23,10 +23,10 @@
 .linkName {
   position: absolute;
   right: 30px;
-  transform: translateY(-15px);
-  transition: opacity 350ms linear;
+  transform: translateY(-18px);
+  transition: opacity 350ms ease-in-out;
   font-weight: 600;
-  cursor: default;
+  cursor: pointer;
   background-color: black;
   z-index: 1000;
   padding: .5rem;

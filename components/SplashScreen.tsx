@@ -7,8 +7,8 @@ const SplashScreen = () => {
     <Layout color='#499feb' title='home'>
       <div className={style.textWrapper}>
         <h1 className={style.title}>FLIP</h1>
-        <p className={style.subTitle}>The flashcard app that can help</p>
-        <p className={style.subTitle}>you remember anything!</p>
+        <p className={style.subTitle}>The flashcard app</p>
+        <p className={style.text}>that can help you remember anything!</p>
       </div>
     </Layout>
   );

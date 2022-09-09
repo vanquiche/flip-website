@@ -3,10 +3,11 @@
   display: flex;
   justify-content: space-evenly;
   // outline: 1px solid red;
-  width: 100%;
+  width: 80%;
   padding: 0 5vw;
   padding-top: 1rem;
-
+  left: 50%;
+  transform: translateX(-50%);
   a {
     display: block;
     font-size: clamp(0.8rem, 3vw, 1.1rem);
@@ -20,7 +21,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 599px) {
   .container {
     display: none;
   }

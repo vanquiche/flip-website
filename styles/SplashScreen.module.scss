@@ -1,7 +1,12 @@
 .textWrapper {
-  width: 100%;
+  width: clamp(300px, 100%, 600px);
   height: 100%;
-  // outline: 1px solid black;
+  padding: 5rem 0;
+  outline: 0.45rem solid white;
+  border-radius: 15px;
+  align-self: center;
+  // box-shadow: 1rem 1rem 15px rgb(58, 58, 58);
+  // padding-bottom: 6rem;
 }
 
 .title {
@@ -11,10 +16,21 @@
 }
 
 .subTitle {
-  font-size: clamp(1rem, 5vw, 1.4rem);
+  font-size: clamp(1.2rem, 5vw, 1.3rem);
   text-align: center;
   font-weight: 700;
   line-height: 140%;
+}
 
+.text {
+    font-size: clamp(1.2rem, 5vw, 1.3rem);
+  text-align: center;
+  font-weight: 700;
+  line-height: 140%;
+}
 
+@media screen and (max-width: 599px) {
+  .text {
+    display: none;
+  }
 }
