@@ -18,6 +18,7 @@ const About = () => {
               <Image
                 src={require('../public/images/laptop.png')}
                 alt='laptop icon'
+                priority
               />
             </span>
             <InfoCard
@@ -31,6 +32,7 @@ const About = () => {
               <Image
                 src={require('../public/images/cat.png')}
                 alt='cat icon'
+                priority
               />
             </span>
             <InfoCard
