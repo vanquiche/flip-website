@@ -34,7 +34,7 @@ const Layout = ({ children, color, title }: Props) => {
         >
           {title && title !== 'home' && (
             <span className={style.titleWrapper}>
-              <h4 className={style.title}>{title.toUpperCase()}</h4>
+              <h1 className={style.title}>{title.toUpperCase()}</h1>
             </span>
           )}
           {children}
