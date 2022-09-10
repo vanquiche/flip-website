@@ -1,8 +1,16 @@
 # Flip Flashcard Website
 
-A landing page for my iOS app Flip, a simple flashcard app to help you study and remember anything.
+A landing page for the app **Flip Flashcard**.
 
-- site link coming soon...
-- link to app coming soon...
-- link to app repo coming soon...
-- site example images coming soon...
+For more information about Flip please checkout out the links:
+- **[Deployed Site](https://flipflashcard.com)**
+- **[App Store Page](https://apps.apple.com/us/app/flip-flashcard/id1637560175?l=en)**
+- **[Flip Flashcard GitHub](https://github.com/vanquiche/Flip-Flashcard-App)**
+
+### Tech Stack
+
+- Next.js
+- TypeScript
+- Sass
+
+
