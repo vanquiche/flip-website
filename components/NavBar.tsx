@@ -17,10 +17,10 @@ const NavBar = ({ links }: Props) => {
           i === 0 ? null :
           <div className={style.linkItem} key={i}>
             {link.icon && (
-              <span style={{ alignSelf: 'center' }}>
+              <span style={{ alignSelf: 'center', width: '50px', height: '50px' }}>
                 <Image
-                  width={'50px'}
-                  height={'50px'}
+                  width='50px'
+                  height='50px'
                   src={link.icon}
                   alt={link.alt}
                   className={style.linkImage}

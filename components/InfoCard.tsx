@@ -15,11 +15,10 @@ const InfoCard = ({ title, content, img, alt, color }: Props) => {
     <div className={style.container}>
       {img && (
         <div className={style.image}>
-          <Image src={img} alt={alt} priority/>
+          <Image src={img} alt={alt} priority />
         </div>
       )}
-      <h6 className={style.title}>{title?.toUpperCase()}</h6>
-
+      <h2 className={style.title}>{title?.toUpperCase()}</h2>
       <p className={style.content}>{content?.toUpperCase()}</p>
     </div>
   );

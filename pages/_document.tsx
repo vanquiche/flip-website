@@ -1,12 +1,13 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import loader from '../components/loader';
+import Script from 'next/script';
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang='en'>
       <Head>
         <link
-          href='https://fonts.googleapis.com/css?family=Baloo+2:regular,500,600,700,800'
+          href='https://fonts.googleapis.com/css?family=Baloo+2:regular,500,600,700,800&display=swap'
           rel='stylesheet'
         />
         <style>{loader}</style>
