@@ -19,12 +19,10 @@ const NavBar = ({ links }: Props) => {
             {link.icon && (
               <span style={{ alignSelf: 'center', width: '50px', height: '50px' }}>
                 <Image
-                  width='50px'
-                  height='50px'
                   src={link.icon}
                   alt={link.alt}
                   className={style.linkImage}
-                  loading='eager'
+                  layout='responsive'
                 />
               </span>
             )}

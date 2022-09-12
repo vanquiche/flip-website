@@ -56,6 +56,11 @@
   gap: 1rem;
 }
 
+.imgWrapper {
+  height: 85px;
+  width: 85px;
+}
+
 @media screen and (max-width: 700px) {
   .itemContainer {
     grid-template-columns: 1fr;

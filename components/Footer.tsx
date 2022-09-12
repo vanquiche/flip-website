@@ -6,12 +6,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className={style.container}>
-      <span className={style.imgWrapper}>
+      {/* <span className={style.imgWrapper}>
         <Image
           src={require('../public/images/clover.png')}
           alt='clover logo'
         />
-      </span>
+      </span> */}
       <small className={style.footerText}>
         &#169; HAPPY CLOVER STUDIO {year}
       </small>

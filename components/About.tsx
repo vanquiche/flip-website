@@ -33,6 +33,7 @@ const About = () => {
               <Image
                 src={require('../public/images/cat.png')}
                 alt='cat icon'
+
                 // priority
               />
             </span>
@@ -53,7 +54,7 @@ const About = () => {
             HEART COIN
           </a>
         </span> */}
-      <SocialLinks />
+        <SocialLinks />
       </div>
     </Layout>
   );
