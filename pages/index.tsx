@@ -59,7 +59,7 @@ const Home: NextPage = () => {
             key='desc'
           />
           <meta property='og:title' content='Flip Flaschard App' />
-          <meta property='og:image' content='/favicon.ico' />
+          <meta property='og:image' content='https://flipflashcard.com/adaptive-icon.png' />
           <meta
             property='og:description'
             content='The best flashcard app to help you study and remember anything! Available on the iOS app store now.'
