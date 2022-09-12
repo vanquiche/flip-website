@@ -3,6 +3,7 @@ import Layout from './Layout';
 import style from '../styles/About.module.scss';
 import InfoCard from './InfoCard';
 import Image from 'next/image';
+import SocialLinks from './SocialLinks';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
               <Image
                 src={require('../public/images/laptop.png')}
                 alt='laptop icon'
-                priority
+                // priority
               />
             </span>
             <InfoCard
@@ -32,7 +33,7 @@ const About = () => {
               <Image
                 src={require('../public/images/cat.png')}
                 alt='cat icon'
-                priority
+                // priority
               />
             </span>
             <InfoCard
@@ -41,7 +42,7 @@ const About = () => {
             />
           </div>
         </div>
-        <p className={style.subtitle}>IN COLLABORATION WITH</p>
+        {/* <p className={style.subtitle}>IN COLLABORATION WITH</p>
         <span className={style.heartcoinLogo}>
           <a
             className={style.heartcoinText}
@@ -51,7 +52,8 @@ const About = () => {
           >
             HEART COIN
           </a>
-        </span>
+        </span> */}
+      <SocialLinks />
       </div>
     </Layout>
   );

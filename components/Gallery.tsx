@@ -54,7 +54,6 @@ const Gallery = () => {
                 </span>
               </Zoom>}
             {isMobile &&
-              // <Zoom>
                 <span className={style.image}>
                   <Image
                     src={f.img}
@@ -63,7 +62,6 @@ const Gallery = () => {
                     priority
                   />
                 </span>
-              // </Zoom>
             }
             <InfoCard title={f.title} content={f.content} />
           </div>

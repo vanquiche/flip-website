@@ -1,0 +1,16 @@
+.container {
+  width: clamp(15rem, 70%, 20rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.7rem;
+}
+
+.icon {
+  filter: invert(100%)
+}
+
+.title {
+  text-align: center;
+  font-weight: 800;
+}
