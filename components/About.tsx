@@ -24,7 +24,7 @@ const About = () => {
             </span> */}
             <InfoCard
               title={'steve'}
-              content="WHEN NOT PROGRAMMING, HE LIKES TO WATCH MOVIES AND WRANGLE WILD KITTIES"
+              content="WHEN NOT PROGRAMMING, HE LIKES TO WATCH MOVIES, PLAY CHESS, AND WRANGLE WILD KITTIES"
               img={require('../public/images/laptop.png')}
             />
           </div>
@@ -40,7 +40,7 @@ const About = () => {
             </span> */}
             <InfoCard
               title={`michelle`}
-              content="WHEN NOT DESIGNING, SHE LIKES TO WRITE CHILDREN'S BOOKS AND DRAWING CUTE CAT ILLUSTRATIONS"
+              content="WHEN NOT DESIGNING, SHE LIKES TO WRITE CHILDREN'S BOOKS AND DRAW CUTE ILLUSTRATIONS OF CATS"
               img={require('../public/images/cat.png')}
             />
           </div>
