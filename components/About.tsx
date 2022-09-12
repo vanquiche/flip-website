@@ -15,31 +15,33 @@ const About = () => {
         <div className={style.itemContainer}>
           {/* item 1 */}
           <div className={style.item}>
-            <span className={style.imgWrapper}>
+            {/* <span className={style.imgWrapper}>
               <Image
                 src={require('../public/images/laptop.png')}
                 alt='laptop icon'
                 // priority
               />
-            </span>
+            </span> */}
             <InfoCard
-              title={'programmer | steve'}
-              content="WHEN HE'S NOT PROGRAMMING, STEVE ENJOYS CREATING ART, MOVIES, AND HANGING OUT WITH KITTIES"
+              title={'steve'}
+              content="WHEN NOT PROGRAMMING, HE LIKES TO WATCH MOVIES AND WRANGLE WILD KITTIES"
+              img={require('../public/images/laptop.png')}
             />
           </div>
           {/* item 2 */}
           <div className={style.item}>
-            <span className={style.imgWrapper}>
+            {/* <span className={style.imgWrapper}>
               <Image
                 src={require('../public/images/cat.png')}
                 alt='cat icon'
 
                 // priority
               />
-            </span>
+            </span> */}
             <InfoCard
-              title={`designer | michelle`}
-              content="MICHELLE SPENDS HER DAYS WRITING CHILDREN'S BOOKS, DEVELOPING VIDEO GAMES, AND DRAWING CUTE CATS!"
+              title={`michelle`}
+              content="WHEN NOT DESIGNING, SHE LIKES TO WRITE CHILDREN'S BOOKS AND DRAWING CUTE CAT ILLUSTRATIONS"
+              img={require('../public/images/cat.png')}
             />
           </div>
         </div>

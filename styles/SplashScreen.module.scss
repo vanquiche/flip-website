@@ -16,21 +16,15 @@
 }
 
 .subTitle {
-  font-size: clamp(1.2rem, 5vw, 1.3rem);
+  font-size: clamp(1.4rem, 5vw, 1.3rem);
   text-align: center;
   font-weight: 700;
   line-height: 140%;
 }
 
 .text {
-    font-size: clamp(1.2rem, 5vw, 1.3rem);
+    font-size: clamp(1.4rem, 5vw, 1.3rem);
   text-align: center;
   font-weight: 700;
   line-height: 140%;
-}
-
-@media screen and (max-width: 599px) {
-  .text {
-    display: none;
-  }
 }
