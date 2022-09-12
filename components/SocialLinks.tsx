@@ -21,7 +21,7 @@ const social = [
   },
   {
     name: 'TikTok',
-    link: 'https://tiktok.com/@flipflashcard',
+    link: 'https://tiktok.com/@flipflashcardapp',
     icon: require('../public/images/icons8-tiktok-50.png'),
   },
   {
