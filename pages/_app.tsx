@@ -6,7 +6,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const loader = document.getElementById('globalLoader');
-      if (loader) loader.style.display = 'none';
+
+      if (document.fonts.status === 'loaded' && loader) {
+        loader.style.display = 'none';
+      }
     }
   }, []);
   return <Component {...pageProps} />;
