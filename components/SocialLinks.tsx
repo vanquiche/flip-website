@@ -38,14 +38,13 @@ const SocialLinks = () => {
       <div className={style.container}>
         {social.map((s) => {
           return (
-            <Link href={s.link}>
+            <Link href={s.link} key={s.name}>
               <a>
                 <Image
                   src={s.icon}
                   width='38px'
                   height='38px'
                   alt={s.name}
-                  key={s.name}
                   className={style.icon}
                 />
               </a>
