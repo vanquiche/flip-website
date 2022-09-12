@@ -5,6 +5,7 @@ import InfoCard from './InfoCard';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { useMediaQuery } from 'react-responsive';
 
 const features: { title: string; content: string; img?: any; alt?: string }[] =
   [
@@ -35,21 +36,35 @@ const features: { title: string; content: string; img?: any; alt?: string }[] =
   ];
 
 const Gallery = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
   return (
     <Layout title='gallery' color='#43bccd'>
       <div className={style.container}>
         {features.map((f, i) => (
           <div className={style.infoContainer} key={i}>
-            <Zoom>
-              <span className={style.image}>
-                <Image
-                  src={f.img}
-                  style={{ borderRadius: '20px' }}
-                  alt={f.alt}
-                  priority
-                />
-              </span>
-            </Zoom>
+            {!isMobile &&
+               <Zoom>
+                <span className={style.image}>
+                  <Image
+                    src={f.img}
+                    style={{ borderRadius: '20px' }}
+                    alt={f.alt}
+                    priority
+                  />
+                </span>
+              </Zoom>}
+            {isMobile &&
+              // <Zoom>
+                <span className={style.image}>
+                  <Image
+                    src={f.img}
+                    style={{ borderRadius: '20px' }}
+                    alt={f.alt}
+                    priority
+                  />
+                </span>
+              // </Zoom>
+            }
             <InfoCard title={f.title} content={f.content} />
           </div>
         ))}
