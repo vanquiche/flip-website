@@ -18,7 +18,6 @@ const SideNav = ({ links }: Props) => {
   const { location } = useContext(LocationContext);
   const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
 
-
   return (
     <nav className={style.container}>
       {links.map((link, i) => {
@@ -32,7 +31,7 @@ const SideNav = ({ links }: Props) => {
                   location === link.path.replace('#', '') ? 'white' : '',
               }}
             >
-              {isMobile && <NavName name={link.name} />}
+              {!isMobile && <NavName name={link.name} />}
             </a>
           </Link>
         );
