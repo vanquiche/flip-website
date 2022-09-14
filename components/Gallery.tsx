@@ -49,7 +49,7 @@ const Gallery = () => {
                     src={f.img}
                     style={{ borderRadius: '20px' }}
                     alt={f.alt}
-                    priority
+                    // priority
                   />
                 </span>
               </Zoom>}
