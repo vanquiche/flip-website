@@ -17,12 +17,14 @@ const NavBar = ({ links }: Props) => {
           i === 0 ? null :
           <div className={style.linkItem} key={i}>
             {link.icon && (
-              <span style={{ alignSelf: 'center', width: '50px', height: '50px' }}>
+              <span>
                 <Image
                   src={link.icon}
                   alt={link.alt}
                   className={style.linkImage}
-                  layout='responsive'
+                  width={50}
+                  height={50}
+                  // layout='responsive'
                 />
               </span>
             )}

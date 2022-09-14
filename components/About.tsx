@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from './Layout';
 import style from '../styles/About.module.scss';
 import InfoCard from './InfoCard';
-import Image from 'next/image';
 import SocialLinks from './SocialLinks';
 
 const About = () => {
@@ -15,47 +14,23 @@ const About = () => {
         <div className={style.itemContainer}>
           {/* item 1 */}
           <div className={style.item}>
-            {/* <span className={style.imgWrapper}>
-              <Image
-                src={require('../public/images/laptop.png')}
-                alt='laptop icon'
-                // priority
-              />
-            </span> */}
             <InfoCard
               title={'steve'}
-              content="WHEN NOT PROGRAMMING, HE LIKES TO WATCH MOVIES, PLAY CHESS, AND WRANGLE WILD KITTIES"
+              content='WHEN NOT PROGRAMMING, HE LIKES TO WATCH MOVIES, PLAY CHESS, AND WRANGLE WILD KITTIES'
               img={require('../public/images/laptop.png')}
+              alt='laptop icon'
             />
           </div>
           {/* item 2 */}
           <div className={style.item}>
-            {/* <span className={style.imgWrapper}>
-              <Image
-                src={require('../public/images/cat.png')}
-                alt='cat icon'
-
-                // priority
-              />
-            </span> */}
             <InfoCard
               title={`michelle`}
               content="WHEN NOT DESIGNING, SHE LIKES TO WRITE CHILDREN'S BOOKS AND DRAW CUTE ILLUSTRATIONS OF CATS"
               img={require('../public/images/cat.png')}
+              alt='cat icon'
             />
           </div>
         </div>
-        {/* <p className={style.subtitle}>IN COLLABORATION WITH</p>
-        <span className={style.heartcoinLogo}>
-          <a
-            className={style.heartcoinText}
-            href='https://etsy.com/shop/heartcoinshop'
-            target='_blank'
-            rel='noreferrer'
-          >
-            HEART COIN
-          </a>
-        </span> */}
         <SocialLinks />
       </div>
     </Layout>
