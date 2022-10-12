@@ -12,7 +12,7 @@ interface Props {
 }
 
 const NavBar = ({ links }: Props) => {
-  
+
   const navigateToSection = (id: string) => () => {
     const title = id.replace('#', '');
     const section = document.getElementById(title);
@@ -29,7 +29,7 @@ const NavBar = ({ links }: Props) => {
       <nav className={style.container} aria-label='Main'>
         {links.map((link, i) => (
           <div className={style.linkItem} key={i}>
-            <button onClick={navigateToSection(link.path)}>
+            <button onClick={navigateToSection(link.path)} aria-label={`navigate to ${link.name} section`}>
               <span className={style.icon}>{link.icon}</span>
               <span className={style.linkText}>{link.name.toUpperCase()}</span>
             </button>
