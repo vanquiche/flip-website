@@ -12,24 +12,22 @@ const Layout = ({ children, color, title }: Props) => {
   const sectionId = title ? title.toLowerCase().replaceAll(' ', '-') : '';
 
   return (
-    <div
+    <section
       id={sectionId}
       className={style.container}
       style={{ backgroundColor: color }}
+      role='contentinfo'
+      aria-label={title}
     >
-      <section
-        className={style.childContainer}
-        role='contentinfo'
-        aria-label={title}
-      >
+      <div className={style.childContainer}>
         {title && title !== 'home' && (
           <span className={style.titleWrapper}>
             <h1 className={style.title}>{title.toUpperCase()}</h1>
           </span>
         )}
         {children}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
