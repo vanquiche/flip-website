@@ -1,16 +1,14 @@
-import Link from 'next/link';
 import React from 'react';
 import style from '../styles/SocialLinks.module.scss';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
-import {AiFillInstagram} from 'react-icons/ai'
+import { AiFillInstagram } from 'react-icons/ai';
 import { FaTiktok, FaEtsy } from 'react-icons/fa';
-
 
 const social = [
   {
     name: 'GitHub',
     link: 'https://github.com/vanquiche',
-    icon: <BsGithub size={40}/>
+    icon: <BsGithub size={40} />,
   },
   {
     name: 'Twitter',
@@ -41,11 +39,9 @@ const SocialLinks = () => {
       <div className={style.container}>
         {social.map((s) => {
           return (
-            <Link href={s.link} key={s.name}>
-              <a>
-                {s.icon}
-              </a>
-            </Link>
+            <a href={s.link} key={s.name} aria-label={`navigate to ${s.name}`}>
+              {s.icon}
+            </a>
           );
         })}
       </div>
