@@ -2,33 +2,35 @@ import React from 'react';
 import InfoCard from './InfoCard';
 import Layout from './Layout';
 import style from '../styles/Features.module.scss';
+import { IoStatsChart, IoCopy, IoDiamond } from 'react-icons/io5';
+import { MdFolderSpecial } from 'react-icons/md';
+import { AiFillShopping } from 'react-icons/ai';
 
 const features = [
   {
     title: 'level system',
     content: 'track and measure the progress of all your subjects',
-    img: 'stats',
+    img: <IoStatsChart size={50} />,
   },
   {
     title: 'customize',
     content: 'personalize your cards with different colors and patterns',
-    img: 'squares',
+    img: <IoCopy size={50} />,
   },
   {
     title: 'organize',
     content: 'create sets within categories to organize your pursuits',
-    img: 'folders',
+    img: <MdFolderSpecial size={50} />,
   },
   {
     title: 'shop',
-    content:
-      'purchase colors, patterns, and themes with coins you earn',
-    img: 'shop',
+    content: 'purchase colors, patterns, and themes with coins you earn',
+    img: <AiFillShopping size={50} />,
   },
   {
     title: 'free updates',
     content: 'enjoy more in the future with free content updates',
-    img: 'diamond',
+    img: <IoDiamond size={50} />,
   },
 ];
 
