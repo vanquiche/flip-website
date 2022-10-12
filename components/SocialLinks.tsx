@@ -1,33 +1,36 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import style from '../styles/SocialLinks.module.scss';
+import { BsGithub, BsTwitter } from 'react-icons/bs';
+import {AiFillInstagram} from 'react-icons/ai'
+import { FaTiktok, FaEtsy } from 'react-icons/fa';
+
 
 const social = [
   {
     name: 'GitHub',
     link: 'https://github.com/vanquiche',
-    icon: require('../public/images/icons8-github-48.png'),
+    icon: <BsGithub size={40}/>
   },
   {
     name: 'Twitter',
     link: 'https://twitter.com/flipflashcard',
-    icon: require('../public/images/icons8-twitter-50.png'),
+    icon: <BsTwitter size={40} />,
   },
   {
     name: 'Instagram',
     link: 'https://instagram.com/flipflashcardapp',
-    icon: require('../public/images/icons8-instagram-50.png'),
+    icon: <AiFillInstagram size={45} />,
   },
   {
     name: 'TikTok',
     link: 'https://tiktok.com/@flipflashcardapp',
-    icon: require('../public/images/icons8-tiktok-50.png'),
+    icon: <FaTiktok size={40} />,
   },
   {
     name: 'Etsy',
     link: 'https://etsy.com/shop/heartcoinshop',
-    icon: require('../public/images/icons8-etsy-64.png'),
+    icon: <FaEtsy size={40} />,
   },
 ];
 
@@ -40,13 +43,7 @@ const SocialLinks = () => {
           return (
             <Link href={s.link} key={s.name}>
               <a>
-                <Image
-                  src={s.icon}
-                  width='38px'
-                  height='38px'
-                  alt={s.name}
-                  className={style.icon}
-                />
+                {s.icon}
               </a>
             </Link>
           );

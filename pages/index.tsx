@@ -11,36 +11,35 @@ import Footer from '../components/Footer';
 import SideNav from '../components/SideNav';
 // contexts
 import LocationContext from '../context/LocationContext';
+import {HiSparkles} from 'react-icons/hi';
+import { BiImages } from 'react-icons/bi';
+import { FiDownload } from 'react-icons/fi';
+import { GiClover } from 'react-icons/gi';
+
 
 const links = [
   {
-    name: 'home',
-    path: '#home',
-    icon: require('../public/images/shimmer.png'),
-    alt: 'home icon',
-  },
-  {
     name: 'features',
     path: '#features',
-    icon: require('../public/images/shimmer.png'),
+    icon: <HiSparkles size={46} />,
     alt: 'features icon',
   },
   {
     name: 'gallery',
     path: '#gallery',
-    icon: require('../public/images/gallery.png'),
+    icon: <BiImages size={46} />,
     alt: 'gallery icon',
   },
   {
     name: 'download',
     path: '#download',
-    icon: require('../public/images/download.png'),
+    icon: <FiDownload size={46} />,
     alt: 'download icon',
   },
   {
     name: 'about',
     path: '#about-the-devs',
-    icon: require('../public/images/clover.png'),
+    icon: <GiClover size={46} />,
     alt: 'clover icon',
   },
 ];
@@ -67,7 +66,7 @@ const Home: NextPage = () => {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <NavBar links={links} />
-        <SideNav links={links} />
+        {/* <SideNav links={links} /> */}
         <main>
           <SplashScreen />
           <Features />

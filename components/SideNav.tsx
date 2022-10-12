@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import LocationContext from '../context/LocationContext';
 import style from '../styles/SideNav.module.scss';
 import NavName from './NavName';
-import { useMediaQuery } from 'react-responsive';
 
 
 type LinkType = {
@@ -16,7 +15,7 @@ interface Props {
 
 const SideNav = ({ links }: Props) => {
   const { location } = useContext(LocationContext);
-  const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
+
 
   return (
     <nav className={style.container}>
@@ -31,7 +30,6 @@ const SideNav = ({ links }: Props) => {
                   location === link.path.replace('#', '') ? 'white' : '',
               }}
             >
-              {!isMobile && <NavName name={link.name} />}
             </a>
           </Link>
         );

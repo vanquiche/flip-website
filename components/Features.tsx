@@ -7,33 +7,28 @@ const features = [
   {
     title: 'level system',
     content: 'track and measure the progress of all your subjects',
-    img: require('../public/images/chart.png'),
-    alt: 'chart icon'
+    img: 'stats',
   },
   {
     title: 'customize',
     content: 'personalize your cards with different colors and patterns',
-    img: require('../public/images/squares.png'),
-    alt: 'cards icon'
+    img: 'squares',
   },
   {
     title: 'organize',
     content: 'create sets within categories to organize your pursuits',
-    img: require('../public/images/folders.png'),
-    alt: 'folders icon'
+    img: 'folders',
   },
   {
     title: 'shop',
     content:
       'purchase colors, patterns, and themes with coins you earn',
-    img: require('../public/images/shopping.png'),
-    alt: 'shopping bag icon'
+    img: 'shop',
   },
   {
     title: 'free updates',
     content: 'enjoy more in the future with free content updates',
-    img: require('../public/images/diamond.png'),
-    alt: 'diamond icon'
+    img: 'diamond',
   },
 ];
 
@@ -47,8 +42,6 @@ const Features = () => {
             title={f.title}
             content={f.content}
             img={f.img}
-            alt={f.alt}
-            color='black'
           />
         ))}
       </div>

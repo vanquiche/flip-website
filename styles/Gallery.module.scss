@@ -21,6 +21,10 @@
   min-width: 225px;
   max-width: 375px;
   height: 100%;
+
+  img {
+    border-radius: 15px;
+  }
 }
 @media screen and (min-width: 800px) {
   .container {
@@ -41,9 +45,5 @@
     gap: 2rem 3rem;
     padding: 0;
     flex-wrap: nowrap;
-
   }
 }
-
-
-

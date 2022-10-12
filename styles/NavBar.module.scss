@@ -1,18 +1,13 @@
 .container {
   position: absolute;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   // outline: 1px solid red;
   width: 80%;
   padding: 0 5vw;
   padding-top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  a {
-    display: block;
-    font-size: clamp(0.8rem, 3vw, 1.1rem);
-    font-weight: 700;
-  }
 }
 
 .linkItem {
@@ -21,12 +16,21 @@
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 100px;
-  // outline: 1px solid red;
+}
+
+.icon {
+  display: block;
+  cursor: pointer;
+}
+
+.linkText {
+  font-weight: 600;
+  cursor: pointer;
+
 }
 
 @media screen and (max-width: 599px) {
-  .container {
+  .linkText {
     display: none;
   }
 }

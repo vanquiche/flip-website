@@ -2,7 +2,7 @@
   width: clamp(300px, 100%, 600px);
   height: 100%;
   padding: 5rem 0;
-  outline: 0.45rem solid white;
+  // outline: 0.45rem solid white;
   border-radius: 15px;
   align-self: center;
   // box-shadow: 1rem 1rem 15px rgb(58, 58, 58);
@@ -13,6 +13,15 @@
   font-size: clamp(2rem, 30vw, 7rem);
   text-align: center;
   line-height: 90%;
+  // animation: flip 1000ms ease-in;
+  // animation-delay: 2000ms;
+  // perspective: 1500;
+  // animation-direction: alternate;
+}
+
+@keyframes flip {
+  0% {transform: rotateX(0);}
+  100% {transform: rotateX(180deg);}
 }
 
 .subTitle {

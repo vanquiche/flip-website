@@ -1,38 +1,38 @@
 import React from 'react';
-import Link from 'next/link';
 import style from '../styles/NavBar.module.scss';
-import Image from 'next/image';
 
-type LinkType = { name: string; path: string; icon?: string; alt?: string };
+type LinkType = {
+  name: string;
+  path: string;
+  icon: JSX.Element;
+};
 
 interface Props {
   links: LinkType[];
 }
 
 const NavBar = ({ links }: Props) => {
+  
+  const navigateToSection = (id: string) => () => {
+    const title = id.replace('#', '');
+    const section = document.getElementById(title);
+    if (section) {
+      section.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <header>
       <nav className={style.container} aria-label='Main'>
         {links.map((link, i) => (
-          i === 0 ? null :
           <div className={style.linkItem} key={i}>
-            {link.icon && (
-              <span>
-                <Image
-                  src={link.icon}
-                  alt={link.alt}
-                  className={style.linkImage}
-                  width={50}
-                  height={50}
-                  // layout='responsive'
-                />
-              </span>
-            )}
-            <Link href={link.path}>
-              <a aria-label={`navigate to ${link.name}`}>
-                {link.name.toUpperCase()}
-              </a>
-            </Link>
+            <button onClick={navigateToSection(link.path)}>
+              <span className={style.icon}>{link.icon}</span>
+              <span className={style.linkText}>{link.name.toUpperCase()}</span>
+            </button>
           </div>
         ))}
       </nav>

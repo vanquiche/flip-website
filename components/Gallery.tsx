@@ -3,66 +3,46 @@ import Layout from './Layout';
 import style from '../styles/Gallery.module.scss';
 import InfoCard from './InfoCard';
 import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-import { useMediaQuery } from 'react-responsive';
 
 const features: { title: string; content: string; img?: any; alt?: string }[] =
   [
     {
       title: 'cards',
       content: 'flip, edit, and quiz your cards with one touch',
-      img: require('../public/images/IMG_0560.jpg'),
+      img: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_600/v1664362605/flip-app/IMG_0560_tebr8t.jpg',
       alt: 'cards screenshot',
     },
     {
       title: 'level & xp',
       content: 'stay motivated as you improve & level up',
-      img: require('../public/images/IMG_0543.jpg'),
+      img: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_600/v1664362605/flip-app/IMG_0543_tftsi8.jpg',
       alt: 'levels screenshot',
     },
     {
       title: 'shop',
       content: 'new colors & themes to keep things fresh',
-      img: require('../public/images/IMG_0576.jpg'),
+      img: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_600/v1664362605/flip-app/IMG_0576_iql3wy.jpg',
       alt: 'shop screenshot',
     },
     {
       title: 'stats',
       content: 'track average score and completed sets',
-      img: require('../public/images/IMG_0540.jpg'),
+      img: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_600/v1664362605/flip-app/IMG_0540_hl6wpn.jpg',
       alt: 'stats screenshot',
     },
   ];
 
 const Gallery = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
+
   return (
     <Layout title='gallery' color='#43bccd'>
       <div className={style.container}>
         {features.map((f, i) => (
           <div className={style.infoContainer} key={i}>
-            {!isMobile &&
-               <Zoom>
-                <span className={style.image}>
-                  <Image
-                    src={f.img}
-                    style={{ borderRadius: '20px' }}
-                    alt={f.alt}
-                    // priority
-                  />
-                </span>
-              </Zoom>}
-            {isMobile &&
-                <span className={style.image}>
-                  <Image
-                    src={f.img}
-                    style={{ borderRadius: '20px' }}
-                    alt={f.alt}
-                    // priority
-                  />
-                </span>
-            }
+            <span className={style.image}>
+              <Image src={f.img} alt={f.alt} height={600} width={427} />
+            </span>
+
             <InfoCard title={f.title} content={f.content} />
           </div>
         ))}

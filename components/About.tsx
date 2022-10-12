@@ -17,8 +17,7 @@ const About = () => {
             <InfoCard
               title={'steve'}
               content='WHEN NOT PROGRAMMING, HE LIKES TO WATCH MOVIES, PLAY CHESS, AND WRANGLE WILD KITTIES'
-              img={require('../public/images/laptop.png')}
-              alt='laptop icon'
+              // img={require('../public/images/laptop.png')}
             />
           </div>
           {/* item 2 */}
@@ -26,8 +25,7 @@ const About = () => {
             <InfoCard
               title={`michelle`}
               content="WHEN NOT DESIGNING, SHE LIKES TO WRITE CHILDREN'S BOOKS AND DRAW CUTE ILLUSTRATIONS OF CATS"
-              img={require('../public/images/cat.png')}
-              alt='cat icon'
+              // img={require('../public/images/cat.png')}
             />
           </div>
         </div>
