@@ -8,7 +8,6 @@ import NavBar from '../components/NavBar';
 import SplashScreen from '../components/SplashScreen';
 import About from '../components/About';
 import Footer from '../components/Footer';
-import SideNav from '../components/SideNav';
 // contexts
 import LocationContext from '../context/LocationContext';
 import {HiSparkles} from 'react-icons/hi';
@@ -66,7 +65,6 @@ const Home: NextPage = () => {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <NavBar links={links} />
-        {/* <SideNav links={links} /> */}
         <main>
           <SplashScreen />
           <Features />
