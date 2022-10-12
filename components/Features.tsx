@@ -2,9 +2,10 @@ import React from 'react';
 import InfoCard from './InfoCard';
 import Layout from './Layout';
 import style from '../styles/Features.module.scss';
-import { IoStatsChart, IoCopy, IoDiamond } from 'react-icons/io5';
+import { IoStatsChart, IoDiamond } from 'react-icons/io5';
 import { MdFolderSpecial } from 'react-icons/md';
 import { AiFillShopping } from 'react-icons/ai';
+import { MdDashboardCustomize } from 'react-icons/md';
 
 const features = [
   {
@@ -15,7 +16,7 @@ const features = [
   {
     title: 'customize',
     content: 'personalize your cards with different colors and patterns',
-    img: <IoCopy size={50} />,
+    img: <MdDashboardCustomize size={50} />,
   },
   {
     title: 'organize',
@@ -39,12 +40,7 @@ const Features = () => {
     <Layout title='Features' color='#4a4e69'>
       <div className={style.container}>
         {features.map((f, i) => (
-          <InfoCard
-            key={i}
-            title={f.title}
-            content={f.content}
-            img={f.img}
-          />
+          <InfoCard key={i} title={f.title} content={f.content} img={f.img} />
         ))}
       </div>
     </Layout>
